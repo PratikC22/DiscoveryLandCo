@@ -17,8 +17,7 @@
     display: flex;
     width: 100%;
     color: white;
-    /* border: 2px solid blue; */
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .logo {
@@ -32,8 +31,7 @@
 .navLink {
     display: flex;
     font-size: 1em;
-    font-weight: 800;
-    /* border: 1px solid red; */
+    font-weight: 400;
 }
 
 .nav-item {
@@ -51,8 +49,17 @@
     text-decoration: underline;
 }
 
+.menu-icon {
+    position: relative;
+    top: 10px;
+}
+
 .logo-navlink:hover{
     text-decoration: none;
+}
+
+#hide {
+    z-index: 1;
 }
 
 /* ************************************************************************************************************************** */
@@ -65,11 +72,9 @@
     flex-wrap: wrap;
     position: relative;
     color: white;
-    /* border: 1px solid yellow; */
 }
 
 .card {
-    /* border: 1px solid red; */
     margin-top: 1.5rem;
     margin: 10px;
     padding: 5px;
@@ -84,7 +89,7 @@
 
 .titleText {
     font-size: 0.9em;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .descriptionText {
@@ -110,7 +115,6 @@
     display: flex;
     justify-content: space-around;
     padding-top: 8%;
-    /* border: 1px red solid; */
 }
 
 .footer-items {
@@ -125,7 +129,6 @@
 #footer-links {
     display: flex;
     justify-content: space-around;
-    /* border: 2px solid white; */
     width: 60%;
 }
 
@@ -138,9 +141,253 @@
 }
 
 .copyright {
+    font-size: 12px;
     opacity: 0.5;
     width: 50%;
     position: relative;
     left: 9%;
     bottom: 10%;
+}
+
+/* ******************************************************************************************************** */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .nav-item {
+        display: none;
+    } 
+
+    .header-container {
+        padding-top: 10px;
+        height: 25vh
+    }
+
+    .logo {
+        position: relative;
+        top: 40px;
+        width: 45%;
+    }
+
+    .logo-img {
+        width: 52px;
+    }
+
+    .menu-icon {
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+
+    .hamlogo {
+        position: relative;
+    }
+
+    .cross-img {
+        position: relative;
+        left: 115px;
+    }
+
+    .contents {
+        height: 100vh; 
+        /* border: 3px solid blue;  */
+    } 
+
+    .menulinks {
+        color: #f3f3f3;
+        font-weight: 100;
+        text-decoration: none;
+        /* border: 1px solid blue; */
+    }
+
+    #l1, #l2, #l3, #l4, #l5 {
+        font-size: 30px;
+    }
+
+    .navbar-container {
+        justify-content: start;
+        padding-left: 5%;
+    }
+
+    .container {
+        background-color: black;
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* position: relative; */
+        color: white;
+    }
+
+    .card {
+        margin-top: 2rem;
+        margin: 0px 10px 100px 10px;
+        padding: 5px;
+        width: 45%;
+        height: 130px;
+    }
+
+    .card-img {
+        height: 75%;
+        width: 100%;
+    }
+
+    .titleText {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .descriptionText {
+        margin-top: 0.1rem;
+        font-size: 14px;
+        color: #777E;
+    }
+
+    .footer-container {
+        height: 80vh;
+        font-size: 0.8em;
+        padding-left: 10%;
+    }
+
+    .footer-item-one {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .footer-items-img {
+        width: 40px;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    #column1 {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .link {
+        position: relative;
+        margin-left: 1px;
+    }
+
+    .page {
+        position: relative;
+        margin-left: 80px;
+    }
+
+    .copyright {
+        top: 1%;
+        width: 80%;
+        left: 2%;
+    }
+}
+
+/* *************************************************************************************************************** */
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .nav-item {
+        display: none;
+    } 
+
+    .header-container {
+        padding-top: 10px;
+        height: 25vh
+    }
+
+    .logo {
+        position: relative;
+        top: 40px;
+        width: 60%;
+    }
+
+    .logo-img {
+        width: 52px;
+    }
+
+    .menu-icon {
+        position: relative;
+        top: 40px;
+        left: 22rem;
+    }
+
+    #hlogo {
+        position: relative;
+        top: 40px;
+        width: 60%;
+    }
+
+    #closeButton {
+        position: relative;
+        top: -20px;
+        left: 90px;
+    }
+
+    .navbar-container {
+        justify-content: start;
+        padding-left: 5%;
+    }
+
+    .container {
+        background-color: black;
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        color: white;
+    }
+
+    .card {
+        margin-top: 2rem;
+        margin: 0px 4px 80px 2px;
+        padding: 5px;
+        width: 32%;
+        height: 130px;
+    }
+
+    .card-img {
+        height: 75%;
+        width: 100%;
+    }
+
+    .titleText {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .descriptionText {
+        margin-top: 0.1rem;
+        font-size: 14px;
+        color: #777E;
+    }
+
+    .footer-container {
+        height: 80vh;
+        font-size: 0.8em;
+        padding-left: 10%;
+    }
+
+    .footer-item-one {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer-links {
+        justify-content: space-between;
+    }
+
+    #column1 {
+        position: relative;
+        right: 10%;
+        width: 30%;
+    }
+
+    .links {
+        margin-right: 10%;
+    }
+
+    .copyright {
+        width: 80%;
+        left: 2%;
+    }
 }
