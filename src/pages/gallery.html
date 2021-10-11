@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/hamMenu.css">
+    <script src="../js/hamMenu.js"></script>
     <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
-    <title>Discovery Land Company</title>
+    <title>Gallery | Discovery Land Company</title>
 </head>
 
 <body>
+    <div id="hambergMenu"></div>
     <div class="header-container">
         <img class="header-img" src="../assets/images/gallary_images/headerBackground.jpg" alt="">
         <div class="navbar-container">
@@ -23,12 +26,12 @@
                 </a>
             </div>
             <div class="navLink">
-                <div class="nav-item"> <a class="navlink-anchor" href="#""> About DLC</a></div>
+                <div class="nav-item"> <a class="navlink-anchor" href="./aboutDLC.html"> About DLC</a></div>
                 <div class=" nav-item"><a class="navlink-anchor" href="./ourWorlds.html"> Our Worlds </a> </div>
-                <div class="nav-item"><a class="navlink-anchor" href="#">Experiences </a> </div>
-                <div class="nav-item"><a class="navlink-anchor" href="#"> Gallery</a> </div>
+                <div class="nav-item"><a class="navlink-anchor" href="./experiences.html"> Experiences </a> </div>
+                <div class="nav-item"><a class="navlink-anchor" href="./gallery.html"> Gallery</a> </div>
                 <div class="nav-item"><a class="navlink-anchor" href="#"> Press </a></div>
-                <div class="nav-item">DropDown</div>
+                <div ><input class="menu-icon" type="image" src="../assets/hamMenu.jpg" alt="" onclick="dropDownMenu()"></div>
             </div>
         </div>
         <div class="sometext">Gallery</div>
