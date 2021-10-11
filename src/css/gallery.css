@@ -9,24 +9,18 @@ body {
     color: white;
 }
 
-.header-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 /* css for header */
 .header-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* border: 2px solid blue; */
 }
 
 .header-container {
     height: 65vh;
     width: 100vw;
     color: white;
+    /* border: 2px solid red; */
 }
 
 .navbar-container {
@@ -34,8 +28,8 @@ body {
     position: relative;
     bottom: 90%;
     width: 100%;
-    /* border: 2px solid; */
-    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+    justify-content: space-around;
 }
 
 .logo {
@@ -49,8 +43,13 @@ body {
 .navLink {
     display: flex;
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 200px;
     /* border: 1px solid red; */
+}
+
+.menu-icon {
+    position: relative;
+    top: 10px;
 }
 
 .nav-item {
@@ -91,19 +90,23 @@ body {
     height: auto;
     width: 100vw;
     flex-wrap: wrap;
+    /* border: 2px solid red; */
 }
 
 .img-card {
+    /* border: 2px solid green; */
     width: 33.33%;
     height: 80%;
 }
 
 .individual-img-class {
+    /* border: 2px solid yellow; */
     height: 100%;
     width: 100%;
 }
 
 .card-text {
+    /* border: 2px solid orange; */
     font-size: 1.3em;
     text-align: center;
     padding: 30px 0;
@@ -153,6 +156,7 @@ body {
 }
 
 .copyright {
+    font-size: 12px;
     opacity: 0.5;
     width: 50%;
     position: relative;
@@ -162,3 +166,144 @@ body {
 
 
 /***************************************************************************************************************/
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .navbar-container {
+        justify-content: start;
+        padding-left: 10%;
+    }
+
+    .navLink {
+        display: none;
+    }
+
+    .logo {
+        width: 48%;
+    }
+
+    .logo-img {
+        width: 45px;
+    }
+
+
+    .sometext {
+        font-size: 2.5em;
+        left: 10%;
+        bottom: 60%;
+    }
+
+    .img-card {
+        width: 50%;
+    }
+
+    .footer-container {
+        height: 80vh;
+        font-size: 0.8em;
+        padding-left: 10%;
+    }
+
+    .footer-item-one {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer-logo {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    #footer-links {
+        justify-content: space-between;
+    }
+
+    #column1 {
+        position: relative;
+        right: 10%;
+        width: 30%;
+    }
+
+    .links {
+        margin-right: 10%;
+    }
+
+    .copyright {
+        width: 80%;
+        left: 2%;
+    }
+}
+
+/* ************************************************************************************************************ */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .navbar-container {
+        justify-content: start;
+        padding-left: 10%;
+    }
+
+    .navLink {
+        display: none;
+    }
+
+    .logo {
+        width: 48%;
+    }
+
+    .logo-img {
+        width: 45px;
+    }
+
+
+    .sometext {
+        font-size: 2.5em;
+        left: 10%;
+        bottom: 60%;
+    }
+
+    .img-card {
+        width: 100%;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .footer-container {
+        height: 80vh;
+        font-size: 0.8em;
+        padding-left: 10%;
+    }
+
+    .footer-item-one {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .footer-items-img {
+        width: 40px;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    #column1 {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .link {
+        position: relative;
+        margin-left: 1px;
+    }
+
+    .page {
+        position: relative;
+        margin-left: 80px;
+    }
+
+    .copyright {
+        top: 1%;
+        width: 80%;
+        left: 2%;
+    }
+}
