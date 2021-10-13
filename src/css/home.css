@@ -216,7 +216,8 @@ video {
 }
 
 .animation-para {
-    font-size: 1.3em;
+    font-size: 1em;
+    opacity: 0.6;
 }
 
 @keyframes scroll {

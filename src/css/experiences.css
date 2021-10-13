@@ -64,6 +64,11 @@ video {
     max-width: 25%;
     font-size: 60px;
     font-weight: 100;
+    animation: bounce 3s;
+}
+
+.sometext:hover {
+    animation: bounce 3s infinite;
 }
 
 .navlink-anchor {
@@ -440,6 +445,15 @@ video {
     bottom: 10%;
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+.bounce {
+  animation-name: bounce;
+}
+
 /* ****************************************************************************************************** */
 
 @media screen and (min-width: 700px) and (max-width: 1100px) {
@@ -448,13 +462,41 @@ video {
         height: 110vh;
     }
 
-    .navLink {
+    .nav-item {
         display: none;
     }    
 
     .navbar-container {
         justify-content: start;
         padding-left: 5%;
+    }
+
+    .logo {
+        position: relative;
+        top: -40px;
+        width: 60%;
+    }
+
+    .logo-img {
+        width: 52px;
+    }
+
+    .menu-icon {
+        position: relative;
+        top: -40px;
+        left: 22rem;
+    }
+
+    #hlogo {
+        position: relative;
+        top: 40px;
+        width: 60%;
+    }
+
+    #closeButton {
+        position: relative;
+        top: -20px;
+        left: 90px;
     }
 
     .sometext {
@@ -546,23 +588,44 @@ video {
         height: 100vh;
     }
 
-    .navLink {
+    .nav-item {
         display: none;
     }    
 
     .navbar-container {
+        position: relative;
         justify-content: start;
         padding-left: 5%;
+        /* border: 2px solid red; */
+    }
+
+    .logo {
+        position: relative;
+        width: 45%;
+        top: -40px;
+    }
+
+    .logo-img {
+        width: 52px;
     }
 
     .menu-icon {
         position: relative;
-        top: 40px;
         left: 40px;
+        top: -40px;
     }
 
     .hamlogo {
         position: relative;
+    }
+
+    .cross-img {
+        position: relative;
+        left: 115px;
+    }
+
+    #l1, #l2, #l3, #l4, #l5 {
+        font-size: 30px;
     }
 
     .sometext {

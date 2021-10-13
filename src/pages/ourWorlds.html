@@ -13,25 +13,27 @@
     <link rel="stylesheet" href="../css/hamMenu.css">
     <script src="../js/hamMenu.js"></script>
     <script src="../js/ourWorlds.js"></script>
+    <!-- linking aos library for css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Our Worlds | Discovery Land Company</title>
 </head>
 
 <body>
     <div id="hide">
-        <div id="hambergMenu"></div>
+        <div id="hambergMenu" data-aos="fade-up" data-aos-duration="2000"></div>
         <div class="header-container">
             <div class="navbar-container">
                 <div class="logo-container">
-                    <a class="navlink-anchor logo-navlink" href="#">
+                    <a class="navlink-anchor logo-navlink" href="./home.html">
                         <img class="logo" src="../assets/logo1.svg" alt="">
                     </a>
                 </div>
                 <div class="navLink">
                     <div class="nav-item"> <a class="navlink-anchor" href="./aboutDLC.html""> About DLC</a></div>
-                        <div class=" nav-item"><a class="navlink-anchor" href="./ourWorlds.html"> Our Worlds </a> </div>
-                    <div class="nav-item"><a class="navlink-anchor" href="#"> Experiences </a> </div>
+                    <div class=" nav-item"><a class="navlink-anchor" href="./ourWorlds.html"> Our Worlds </a> </div>
+                    <div class="nav-item"><a class="navlink-anchor" href="./experiences.html"> Experiences </a> </div>
                     <div class="nav-item"><a class="navlink-anchor" href="./gallery.html"> Gallery</a> </div>
-                    <div class="nav-item"><a class="navlink-anchor" href="#"> Press </a></div>
+                    <div class="nav-item"><a class="navlink-anchor" href="./press.html"> Press </a></div>
                     <div><input class="menu-icon" id="dropDownIcon" type="image" src="../assets/hamMenu.jpg" alt=""
                             onclick="dropDownMenu()"></div>
                 </div>
@@ -72,6 +74,12 @@
         </div>
 
     </div>
+
+    <!-- script for aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
